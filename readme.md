@@ -65,10 +65,6 @@ public class Main {
 }
 ```
 
-Aqui está o texto formatado em Markdown:
-
-markdown
-
 ## Exemplo de Uso
 
 Abaixo está um exemplo de como configurar e iniciar o servidor HTTP NexusWeave:
