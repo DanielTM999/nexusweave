@@ -65,30 +65,37 @@ public class Main {
 }
 ```
 
-## Exemplo de Uso
+## Interface HttpServerRequest
 
-Abaixo está um exemplo de como configurar e iniciar o servidor HTTP NexusWeave:
+Abaixo está uos metodos da interface HttpServerRequest
 
 ```java
-package com.exemplo;
-
-import nexusweave.server.http.NexusWeaveServer;
-import nexusweave.server.http.core.HttpAction;
-import nexusweave.server.http.HttpServerRequest;
-import nexusweave.server.http.HttpServerResponse;
-
-public class Main {
-    public static void main(String[] args) {
-        NexusWeaveServer server = new NexusWeaveServer(8080);
-        server.start(new HttpAction() {
-            @Override
-            public void actionCalback(HttpServerRequest request, HttpServerResponse response) {
-                response.append("<html><body><h1>Olá, Mundo!</h1></body></html>");
-                response.writer();
-            }
-        });
+    public interface HttpRequest {
+        String getHtttpMethod();
+        String getRoute();
+        Map<String, String> getHeaders();
+        String getHeader(String key);
+        String getBody();
+        HttpSession getSession();
     }
-}
+
+```
+
+## Interface HttpServerResponse
+
+Abaixo está uos metodos da interface HttpServerResponse
+
+```java
+    public interface HttpResponse {
+        HttpResponse append(String s);
+        HttpResponse append(int s);
+        HttpResponse append(double s);
+        HttpResponse append(boolean s);
+        HttpResponse append(BigDecimal s);
+        HttpResponse append(Object s);
+        void statusCode(int code);
+        void writer();
+    }
 ```
 
 ## Executando o Servidor
