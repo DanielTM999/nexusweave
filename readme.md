@@ -18,9 +18,9 @@ Para adicionar o NexusWeave ao seu projeto, inclua a seguinte dependência e rep
 ```xml
 <dependencies>
     <dependency>
-        <groupId>nexusweave.server</groupId>
-        <artifactId>nexusweave</artifactId>
-        <version>1.0-SNAPSHOT</version>
+      <groupId>nexusweave.server</groupId>
+      <artifactId>nexusweave</artifactId>
+      <version>1.0.0</version>
     </dependency>
 </dependencies>
 
