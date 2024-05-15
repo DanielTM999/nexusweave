@@ -26,15 +26,11 @@ Para adicionar o NexusWeave ao seu projeto, inclua a seguinte dependência e rep
 
 <repositories>
     <repository>
+        <repository>
         <id>github</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/DanielTM999/nexusweave</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
+        <name>My Maven Repo on GitHub</name>
+        <url>https://github.com/DanielTM999/nexusweave/</url>
+    </repository>
     </repository>
 </repositories>
 ```
