@@ -17,21 +17,27 @@ Para adicionar o NexusWeave ao seu projeto, inclua a seguinte dependência e rep
 
 ```xml
 <dependencies>
-    <dependency>
-      <groupId>nexusweave.server</groupId>
-      <artifactId>nexusweave</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-</dependencies>
+        <dependency>
+            <groupId>nexusweave.server</groupId>
+            <artifactId>nexusweave</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+    </dependencies>
 
-<repositories>
-    <repository>
+    <repositories>
         <repository>
-        <id>github</id>
-        <name>My Maven Repo on GitHub</name>
-        <url>https://github.com/DanielTM999/nexusweave/</url>
-    </repository>
-</repositories>
+            <id>github</id>
+            <name>GitHub Packages DanielTM999</name>
+            <url>https://maven.pkg.github.com/DanielTM999/nexusweave</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 ```
 
 ## Exemplo de Uso
