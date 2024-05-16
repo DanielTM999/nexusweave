@@ -82,9 +82,13 @@ public class NexusWeaveServer implements NexusWeave{
         cashServer = new HashMap<>();
         if(host == null){
             this.host = "127.0.0.1";
+        }else{
+            this.host = host;
         }
         if(port == null){
             this.port = 8080;
+        }else{
+            this.port = port;
         }
     }
 
